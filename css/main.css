@@ -1,121 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-    font-family: "GreenMais";
-    src: url(../fonts/OrdinaryNotesThin.otf);
+  font-family: "GreenMais";
+  src: url(../fonts/OrdinaryNotesThin.otf);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    background-color: #F4F4F9;
-    width: 90%;
-    height: 4000px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    color: #0A0A0A;
+body {
+  background-color: #f4f4f9;
+  width: 90%;
+  height: 4000px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: #0a0a0a;
 }
-header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0px 0px 0px;
-    
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
 }
-header .logo{
-    display: flex;
-    align-items: end;
-    font-family: GreenMais;
+header .logo {
+  display: flex;
+  align-items: end;
+  font-family: GreenMais;
 }
-header .logo h1{
-    font-size: 3rem;
-    color: #C2D586;
-    -webkit-text-stroke: 1px #909090;
+header .logo h1 {
+  font-size: 3rem;
+  color: #c2d586;
+  -webkit-text-stroke: 1px #909090;
 }
-header .logo .fa-plus{
-    font-size: 2rem;
-    margin-left: -10px;
-    color: #A8C256;
+header .logo .fa-plus {
+  font-size: 2rem;
+  margin-left: -10px;
+  color: #a8c256;
 }
 
-.nav-links-content{
-    display: flex;
-    align-items: center;
+.nav-links-content {
+  display: flex;
+  align-items: center;
 }
-.nav-links-content .nav-links{
+.nav-links-content .nav-links {
   display: flex;
   gap: 50px;
-    
 }
-.nav-links-content .nav-links li{
-    list-style: none;
-    font-size: 1rem;
-    cursor: pointer;
-    
+.nav-links-content .nav-links li {
+  list-style: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
-.nav-links-content .nav-links li:hover{
-    color: #A8C256;
-    text-decoration: underline;
+.nav-links-content .nav-links li:hover {
+  color: #a8c256;
+  text-decoration: underline;
 }
-.nav-links-content .nav-links li a{
-    color: #000;
-    transition: all .3s;
+.nav-links-content .nav-links li a {
+  color: #000;
+  transition: all 0.3s;
 }
-.nav-links-content .nav-links li a:hover{
-    color: #A8C256;
+.nav-links-content .nav-links li a:hover {
+  color: #a8c256;
 }
 
 /*Main*/
 
-.ctaContent{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 80vh;
-    gap: 100px;
-    
+.ctaContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85vh;
+  gap: 100px;
 }
-.ctaContent .callToAction{
-    width: 50%;
-    padding: 50px;
+.ctaContent .callToAction {
+  max-width: 50%;
+  padding: 50px;
 }
-.ctaContent .callToAction h2{
-    font-size: 3.5rem;
-    color: #000;
+.ctaContent .callToAction h2 {
+  font-size: 3.5rem;
+  color: #000;
 }
-.ctaContent .callToAction .greenText, .fa-plus{
-    color: #A8C256;
-    -webkit-text-stroke: 1px #909090;
+.ctaContent .callToAction .greenText,
+.fa-plus {
+  color: #a8c256;
+  -webkit-text-stroke: 1px #909090;
 }
-.ctaContent .callToAction p{
-    font-size: 1.2rem;
-    color: #0A0A0A;
-    margin: 20px 0px;
-}
-
-.ctaContent .btnCta{
-    padding: 10px 20px;
-    background-color: #A8C256;
-    color: #ffffff;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all .3s;
-}
-.ctaContent .btnCta:hover{
-    background-color: #7f9241;
+.ctaContent .callToAction p {
+  font-size: 1.2rem;
+  color: #0a0a0a;
+  margin: 20px 0px;
 }
 
-.ctaContent img{
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
+.ctaContent .btnCta {
+  padding: 10px 20px;
+  background-color: #a8c256;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.ctaContent .btnCta:hover {
+  background-color: #7f9241;
+}
+
+.ctaContent img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+/*Beneficios*/
+
+.benefits {
+  width: 100%;
+}
+.titleBenefits {
+  text-align: center;
+  font-size: 3rem;
+  color: #a8c256;
+  -webkit-text-stroke: 1px #909090;
+}
+.benefits-itens-content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+.benefits-itens-content .itens {
+  text-align: center;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(96, 165, 18, 0.514);
+  padding: 20px;
+}
+.benefits-itens-content .itens .fa-solid {
+  font-size: 2rem;
+  -webkit-text-stroke: 1px #000;
+}
+.benefits-itens-content .itens h2 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #000;
+}
+.benefits-itens-content .itens p {
+  font-size: 1rem;
+  color: #0a0a0a;
+}
+/* Cores para cada icone */
+
+#icon-folha {
+  color: #4caf50; /* Verde claro */
+}
+
+#icon-cerebro {
+  color: #42a5f5; /* Azul claro */
+}
+
+#icon-lampada {
+  color: #ffeb3b; /* Amarelo */
+}
+
+#icon-gota {
+  color: #1e88e5; /* Azul escuro */
+}
+
+#icon-planta {
+  color: #388e3c; /* Verde escuro */
+}
+
+#icon-lua {
+  color: #8e24aa; /* Roxo */
 }
