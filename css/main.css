@@ -112,8 +112,8 @@ header .logo .fa-plus {
 
 .ctaContent img {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
 }
 
 /*Beneficios*/
@@ -201,3 +201,5 @@ header .logo .fa-plus {
   border-radius: 50%;
   padding: 20px;
 }
+
+/*Categoria ou Tipo de Plantas*/
