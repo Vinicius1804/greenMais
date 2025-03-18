@@ -15,7 +15,7 @@ a {
 body {
   background-color: #f4f4f9;
   width: 90%;
-  height: 4000px;
+  height: auto;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   color: #0a0a0a;
@@ -120,6 +120,7 @@ header .logo .fa-plus {
 
 .benefits {
   width: 100%;
+  margin-bottom: 100px;
 }
 .titleBenefits {
   text-align: center;
@@ -129,7 +130,7 @@ header .logo .fa-plus {
 }
 .benefits-itens-content {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 30px;
@@ -179,4 +180,24 @@ header .logo .fa-plus {
 
 #icon-lua {
   color: #8e24aa; /* Roxo */
+}
+
+/*Carrossel*/
+
+.carousel-inner{
+  height: 500px;
+  margin-bottom: 100px;
+  border-radius: 20px ;
+
+}
+.carousel-inner img{
+  height: 100%;
+  border-radius: 20px ;
+  object-fit: cover;
+  
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 20px;
 }
