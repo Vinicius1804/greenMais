@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "GreenMais";
+    src: url(../fonts/OrdinaryNotesThin.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #F4F4F9;
+    width: 90%;
+    height: 4000px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #0A0A0A;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+    
+}
+header .logo{
+    display: flex;
+    align-items: end;
+    font-family: GreenMais;
+}
+header .logo h1{
+    font-size: 3rem;
+    color: #C2D586;
+    -webkit-text-stroke: 1px #909090;
+}
+header .logo .fa-plus{
+    font-size: 2rem;
+    margin-left: -10px;
+    color: #A8C256;
+}
+
+.nav-links-content{
+    display: flex;
+    align-items: center;
+}
+.nav-links-content .nav-links{
+  display: flex;
+  gap: 50px;
+    
+}
+.nav-links-content .nav-links li{
+    list-style: none;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.nav-links-content .nav-links li:hover{
+    color: #A8C256;
+    text-decoration: underline;
+}
+.nav-links-content .nav-links li a{
+    color: #000;
+    transition: all .3s;
+}
+.nav-links-content .nav-links li a:hover{
+    color: #A8C256;
+}
+
+/*Main*/
+
+.ctaContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    gap: 100px;
+    
+}
+.ctaContent .callToAction{
+    width: 50%;
+    padding: 50px;
+}
+.ctaContent .callToAction h2{
+    font-size: 3.5rem;
+    color: #000;
+}
+.ctaContent .callToAction .greenText, .fa-plus{
+    color: #A8C256;
+    -webkit-text-stroke: 1px #909090;
+}
+.ctaContent .callToAction p{
+    font-size: 1.2rem;
+    color: #0A0A0A;
+    margin: 20px 0px;
+}
+
+.ctaContent .btnCta{
+    padding: 10px 20px;
+    background-color: #A8C256;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.ctaContent .btnCta:hover{
+    background-color: #7f9241;
+}
+
+.ctaContent img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
