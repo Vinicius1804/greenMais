@@ -184,22 +184,43 @@ header .logo .fa-plus {
 
 /*Carrossel*/
 
-.carousel-inner{
+.carousel-inner {
   height: 500px;
-  margin-bottom: 100px;
-  border-radius: 20px ;
-
+  border-radius: 20px;
 }
-.carousel-inner img{
+.carousel-inner img {
   height: 100%;
-  border-radius: 20px ;
+  border-radius: 20px;
   object-fit: cover;
-  
 }
-.carousel-control-prev-icon, .carousel-control-next-icon{
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   background-color: #000000;
   border-radius: 50%;
   padding: 20px;
 }
 
 /*Categoria ou Tipo de Plantas*/
+.typePlants {
+  width: 100%;
+  margin: 80px 0px;
+}
+.typePlants h1 {
+  color: #a8c256;
+  font-size: 3rem;
+  margin-bottom: 80px;
+  text-align: center;
+  -webkit-text-stroke: 1px #909090;
+}
+.ornamental-plants-container {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid;
+}
+.ornamental-plants-container h2 {
+  
+}
+.div-content-plants{
+  display: flex;
+
+}
