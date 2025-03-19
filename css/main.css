@@ -230,16 +230,15 @@ header .logo .fa-plus {
 .ornamental-plants-container {
   width: 100%;
   padding: 20px;
-  border: 1px solid;
 }
 .ornamental-plants-container h2 {
+  margin-left: 10px;
 }
 .div-content-plants {
   display: flex;
   align-items: center;
   gap: 30px;
   width: 100%;
-  border: 1px solid;
   padding: 10px;
   overflow-x: scroll;
 }
