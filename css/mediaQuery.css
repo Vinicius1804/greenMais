@@ -1,0 +1,51 @@
+@media (max-width: 992px) {
+  .ctaContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ctaContent .callToAction {
+    width: 80%;
+    margin: auto;
+  }
+  .ctaContent .callToAction h2 .greenText {
+    font-size: 8rem;
+  }
+  .ctaContent img {
+    display: none;
+  }
+  .ctaProdutos {
+    justify-content: space-between;
+  }
+  .ctaProdutos .iniciative h1 {
+    font-size: 2.5rem;
+    width: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 95%;
+  }
+  .ctaContent {
+    width: 100%;
+    border: 1px solid;
+    height: 60vh;
+    align-items: center;
+  }
+  .ctaContent .callToAction{
+    width: 100%;
+  }
+
+  .ctaContent .callToAction h2 .p1 {
+    display: none;
+    font-size: 1.25rem;
+  }
+  .ctaContent .callToAction h2 .greenText, .fa-plus {
+    font-size: 5rem;
+  }
+  .itens-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
