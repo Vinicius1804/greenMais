@@ -4,7 +4,7 @@
   font-family: "GreenMais";
   src: url(../fonts/OrdinaryNotesThin.otf);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -91,6 +91,39 @@ header .logo .fa-plus {
 }
 .nav-links-content .nav-links li a:hover {
   color: #a8c256;
+}
+
+#openDropdown {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  padding: 10px; 
+  left: -40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.379);
+  border-radius: 10px;
+  background-color: #fff;
+  width: 190px;
+  z-index: 1;
+}
+.dropdown ul{
+  padding: 0px;
+}
+.dropdown ul li {
+  padding: 5px 0px ;
+}
+.dropdown ul li a {
+  color: #000;
+  font-size: 0.9rem;
+  display: block;
+}
+
+
+#openDropdown:hover .dropdown {
+  transition: all 1s;
+  display: block;
 }
 
 /*Main*/
