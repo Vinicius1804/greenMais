@@ -17,6 +17,9 @@
 
     <!--Link do CSS principal-->
     <link rel="stylesheet" href="css/main.css" />
+    
+    <!--Link do Media Query CSS-->
+    <link rel="stylesheet" href="css/mediaQuery.css" />
 
     <!--CDN Font Awesome-->
     <link
@@ -32,7 +35,7 @@
   <body>
     <!--HEADER-->
     <header>
-      <a class="logo" href="#">
+      <a class="logo" href="#inicio">
         <h1 class="nameGreen">Green</h1>
         <span class="fa-solid fa-plus"></span>
       </a>
@@ -40,13 +43,16 @@
       <nav class="nav-links-content">
         <ul class="nav-links">
           <li>
-            <a href="#">Inicio</a>
+            <a href="#beneficios">Benefícios</a>
           </li>
           <li>
-            <a href="#">Produtos</a>
+            <a href="#tipos">Tipos de Plantas</a>
           </li>
           <li>
-            <a href="#">Sobre Nós</a>
+            <a href="#comoCuidar">Como Cuidar</a>
+          </li>
+          <li>
+            <a href="#produtos">Produtos</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +60,7 @@
 
     <!--MAIN-->
     <main>
-      <section class="ctaContent">
+      <section class="ctaContent" id="inicio">
         <div class="callToAction">
           <h2>
             Seja bem-vindo a
@@ -71,9 +77,9 @@
       </section>
 
       <!--BENEFÍCIOS DAS PLANTAS-->
-      <section class="benefits">
-        <h2 class="titleBenefits">Benefícios das Plantas</h2>
-        <div class="benefits-itens-content">
+      <section class="benefits" id="beneficios">
+        <h2 class="title">Benefícios das Plantas</h2>
+        <div class="itens-content">
           <div class="itens">
             <span class="fa-solid fa-leaf" id="icon-folha"></span>
             <h2>Purificação do Ar</h2>
@@ -179,7 +185,7 @@
       </section>
 
       <!--TIPOS DE PLANTAS-->
-      <section class="typePlants">
+      <section class="typePlants" id="tipos">
         <h1 class="title-type-plants">Tipo de Plantas</h1>
 
         <!--PLANTAS ORNAMENTAIS-->
@@ -505,9 +511,9 @@
       </section>
 
       <!--COMO CUIDAR DAS PLANTAS-->
-      <section class="care">
-        <h1 class="titleCare">Como Cuidar das Plantas</h1>
-        <div class="care-itens-content">
+      <section class="care" id="comoCuidar">
+        <h1 class="title">Como Cuidar das Plantas</h1>
+        <div class="itens-content">
           <div class="itens">
             <span class="fa-solid fa-sun" id="icon-sol"></span>
             <h2>Iluminação</h2>
@@ -549,14 +555,21 @@
             <h2>Controle de Pragas</h2>
             <p>
               Fique atento a possíveis pragas e doenças que possam afetar as
-              plantas. Use insetic
+              plantas. Use inseticidas adequados para prevenir.
+            </p>
+          </div>
+          <div class="itens">
+            <span class="fa-solid fa-seedling" id="icon-poda"></span>
+            <h2>Poda</h2>
+            <p>
+              Remova folhas secas ou galhos mortos regularmente. A poda ajuda a planta a crescer mais forte e saudável, além de manter a aparência bonita.
             </p>
           </div>
         </div>
       </section>
 
       <!--CTA PRODUTOS-->
-      <section class="ctaProdutos">
+      <section class="ctaProdutos" id="produtos">
         <!--FOLHAS FLUTUANTES-->
         <i class="fa-solid fa-leaf folha"></i>
         <i class="fa-solid fa-leaf folha2"></i>
@@ -581,5 +594,6 @@
     <footer></footer>
     <!--CDN Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
