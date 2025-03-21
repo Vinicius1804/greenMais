@@ -193,7 +193,6 @@ header .logo .fa-plus {
   grid-template-rows: auto;
   justify-items: center;
   gap: 50px;
-
   margin-top: 100px;
 }
 .itens-content .itens {
@@ -253,6 +252,12 @@ header .logo .fa-plus {
   border-radius: 20px;
   object-fit: cover;
 }
+#carouselExampleAutoplaying button{
+  background-color: transparent;
+}
+#carouselExampleAutoplaying button:hover{
+  background-color: transparent;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #000000;
@@ -260,10 +265,11 @@ header .logo .fa-plus {
   padding: 20px;
 }
 
+
 /*Categoria ou Tipo de Plantas*/
 .typePlants {
   width: 100%;
-  margin: 80px 0px;
+  
 }
 .typePlants h1 {
   color: #a8c256;
@@ -313,6 +319,7 @@ header .logo .fa-plus {
   justify-content: space-evenly;
   margin-bottom: 100px;
   position: relative;
+
 }
 /*FOLHAS FLUTUANDO*/
 .folha {
@@ -351,6 +358,7 @@ header .logo .fa-plus {
 .ctaProdutos .iniciative h1 {
   font-size: 3.5rem;
   color: #000;
+  
 }
 .ctaProdutos .iniciative .nameGreen {
   font-size: 4rem;
