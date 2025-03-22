@@ -1,4 +1,4 @@
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
   .ctaContent {
     flex-direction: column;
     text-align: center;
@@ -25,63 +25,80 @@
 
 @media (max-width: 480px) {
   body {
-    width: 95%;
+    width: 100%;
+  }
+  header{
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .nav-links-content {
+    display: none;
+  }
+  .menuBurguer {
+    display: block;
+  }
+  .dropdown{
+    left: 50%;
   }
   .ctaContent {
     width: 100%;
     height: 50vh;
     align-items: center;
   }
-  .ctaContent .callToAction{
+  .ctaContent .callToAction {
     width: 100%;
   }
 
   .ctaContent .callToAction h2 .p1 {
     display: none;
   }
-  .ctaContent .callToAction h2 .greenText, .fa-plus {
+  .ctaContent .callToAction h2 .greenText,
+  .fa-plus {
     font-size: 4.5rem;
   }
-  
+
   .itens-content {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .benefits{
+  .benefits {
     margin: 0;
   }
-  .itens-content{
+  .itens-content {
     margin: 50px;
   }
-  .title{
+  .title {
     margin: 40px 0px;
     font-size: 2rem;
   }
-  .carousel-inner{
-    height: 300px;;
+  .carousel-inner {
+    height: 300px;
   }
-  #carouselExampleAutoplaying button{
+  #carouselExampleAutoplaying button {
     height: 100%;
   }
-  .ctaProdutos{
+  .ctaProdutos {
     flex-direction: column;
     text-align: center;
   }
-  .ctaProdutos .iniciative{
+  .ctaProdutos .iniciative {
     width: 100%;
     padding: 50px 0px;
-    
   }
-  .ctaProdutos .iniciative h1{
+  .ctaProdutos .iniciative h1 {
     font-size: 2rem;
     width: 100%;
     margin-bottom: 50px;
   }
-  .ctaProdutos img{
+  .ctaProdutos img {
     max-width: 95%;
   }
-  .folha2{
+  .folha2 {
     top: -3%;
     left: 80%;
   }
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+}
 }

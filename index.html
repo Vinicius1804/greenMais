@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!--Link do Media Query CSS-->
+
     <link rel="stylesheet" href="css/mediaQuery.css" />
 
     <!--CDN Font Awesome-->
@@ -69,8 +70,43 @@
         </ul>
       </nav>
 
-      
+      <nav class="menuBurguer">
+        <div class="burguerIcon">
+          <span class="fa-solid fa-bars"></span>
+        </div>
+        
+      </nav>
     </header>
+    <!--Fundo que vai abrir com blur quando o menu hamburguer abrir a lista-->
+    <div class="fundoOpaco"></div>
+    <div class="contentBurguer" style="display: none;">
+      <ul class="nav-links">
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Sobre Nós</a>
+        </li>
+
+        <li id="openDropdown">
+          <a href="#"
+            >Guia
+            <span class="fa fa-chevron-up"></span>
+          </a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#beneficio">Benefícios das Plantas</a></li>
+              <li><a href="#tipoPlantas">Tipo de Pantas</a></li>
+              <li><a href="#comoCuidar">Como cuidar</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
 
     <!--MAIN-->
     <main>
@@ -607,7 +643,61 @@
     </main>
 
     <!--FOOTER-->
-    <footer></footer>
+    <footer>
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <div id="footer_logo">
+            <img src="assets/images/favicon.svg" alt="" />
+            <p>Green +</p>
+          </div>
+
+          <div id="footer_social_media">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        
+        <ul class="footer-list">
+          <li>
+            <h3>Produtos</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">App</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Camisas</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Canecas</a>
+          </li>
+        </ul>
+
+        <div id="footer_subscribe">
+          <h3>Inscreva-se</h3>
+
+          <div id="input_group">
+            <input type="email" id="email" />
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="footer_copyright">
+        <i class="fa-regular fa-copyright"></i>
+        2025 Todos os direitos reservados - Vinicius
+      </div>
+    </footer>
     <!--CDN Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

@@ -30,6 +30,9 @@ button:hover {
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 body {
   background-color: #f4f4f9;
   width: 90%;
@@ -93,6 +96,7 @@ header .logo .fa-plus {
   color: #a8c256;
 }
 
+/*DROPDOWN*/
 #openDropdown {
   position: relative;
 }
@@ -123,6 +127,56 @@ header .logo .fa-plus {
 #openDropdown:hover .dropdown {
   transition: all 1s;
   display: block;
+}
+/*MENU BURGUER*/
+.menuBurguer {
+  display: none;
+  position: relative;
+}
+.menuBurguer .fa-bars,
+.fa-xmark {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.menuBurguer .fa-bars:hover {
+  color: #7f9241;
+}
+.contentBurguer {
+  text-align: center;
+  position: fixed;
+  left: 25px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.379);
+  border-radius: 10px;
+  background-color: #fff;
+  width: 90%;
+  z-index: 3;
+}
+.contentBurguer .nav-links {
+  margin: auto 0px;
+}
+.contentBurguer .nav-links li:hover {
+  color: #a8c256;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.contentBurguer .nav-links li a {
+  color: #000;
+  transition: all 0.3s;
+}
+.contentBurguer .nav-links li a:hover {
+  color: #a8c256;
+}
+.fundoOpaco {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Preto com opacidade */
+  z-index: 2;
 }
 
 /*Main*/
@@ -252,10 +306,10 @@ header .logo .fa-plus {
   border-radius: 20px;
   object-fit: cover;
 }
-#carouselExampleAutoplaying button{
+#carouselExampleAutoplaying button {
   background-color: transparent;
 }
-#carouselExampleAutoplaying button:hover{
+#carouselExampleAutoplaying button:hover {
   background-color: transparent;
 }
 .carousel-control-prev-icon,
@@ -265,11 +319,9 @@ header .logo .fa-plus {
   padding: 20px;
 }
 
-
 /*Categoria ou Tipo de Plantas*/
 .typePlants {
   width: 100%;
-  
 }
 .typePlants h1 {
   color: #a8c256;
@@ -319,7 +371,6 @@ header .logo .fa-plus {
   justify-content: space-evenly;
   margin-bottom: 100px;
   position: relative;
-
 }
 /*FOLHAS FLUTUANDO*/
 .folha {
@@ -358,7 +409,6 @@ header .logo .fa-plus {
 .ctaProdutos .iniciative h1 {
   font-size: 3.5rem;
   color: #000;
-  
 }
 .ctaProdutos .iniciative .nameGreen {
   font-size: 4rem;
@@ -395,3 +445,145 @@ header .logo .fa-plus {
   color: #66bb6a; /* verde mais forte */
 }
 /*----------------------------------------*/
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+footer #wave-mobile {
+  display: none;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer_logo img {
+  width: 60px;
+  height: 60px;
+}
+
+#footer_logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  transition: all 0.4s;
+  color: #474747;
+  font-weight: 500;
+}
+
+.footer-list .footer-link:hover {
+  color: var(--primary-color);
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+  border: 2px solid #a8c256;
+  border-radius: 10px 0 0 10px;
+}
+
+#input_group button {
+  border: none;
+  padding: 0 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+  color: #000;
+  font-weight: 500;
+  
+}
