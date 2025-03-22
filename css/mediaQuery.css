@@ -67,6 +67,10 @@
   .itens-content {
     margin: 50px;
   }
+  .care .title{
+    margin: auto;
+    width: 80%;
+  }
   .title {
     margin: 40px 0px;
     font-size: 2rem;
