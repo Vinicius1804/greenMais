@@ -240,6 +240,7 @@ header .logo .fa-plus {
   font-size: 3rem;
   color: #a8c256;
   -webkit-text-stroke: 1px #909090;
+  margin: 80px 0px;
 }
 .itens-content {
   display: grid;
