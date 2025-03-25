@@ -27,7 +27,7 @@
   body {
     width: 100%;
   }
-  header{
+  header {
     width: 100%;
     padding: 0px 20px;
   }
@@ -37,7 +37,7 @@
   .menuBurguer {
     display: block;
   }
-  .dropdown{
+  .dropdown {
     left: 50%;
   }
   .ctaContent {
@@ -67,7 +67,7 @@
   .itens-content {
     margin: 50px;
   }
-  .care .title{
+  .care .title {
     margin: auto;
     width: 80%;
   }
@@ -104,5 +104,8 @@
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
-}
+  }
+  .footer-list{
+    padding: 0;
+  }
 }
